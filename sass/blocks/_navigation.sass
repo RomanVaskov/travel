@@ -1,0 +1,51 @@
+.header__wrapper
+  position: absolute
+  left: 0
+  top: 0
+  z-index: 4
+  background-color: #fff
+  display: block
+  width: 100%
+  padding: 23px 0 20px
+   
+.header-navigation
+  text-align: center
+  ul
+    list-style-type: none
+    margin: 0
+    padding: 0    
+    li
+      display: inline-block
+      margin-left: 55px      
+      &:before
+        content: ""
+        display: inline-block
+        transform: rotate(45deg)
+        width: 4px
+        border: 1px solid #dbdbdb
+        padding: 1.5px        
+        margin-bottom: 3px
+        margin-right: 55px        
+      &:first-child:before
+        content: "" 
+        display: none
+      &:first-child
+        margin-left: 0       
+      a
+        text-transform: uppercase
+        text-decoration: none
+        font-family: 'Proxima Nova'
+        color: #454851
+        font-size: 16px
+        font-weight: 600
+        line-height: 21px
+        letter-spacing: 1px
+        &:hover
+          color: $yellow
+          transition: 0.2s       
+      span
+        font-family: 'Lust Script'
+        font-weight: 400
+        line-height: 21px
+        font-size: 36px
+        color: #171d1c
