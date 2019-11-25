@@ -228,15 +228,20 @@ p {
   width: 15px;
   height: 15px;
   top: 0;
-  right: 2px;
+  right: 0;
   border: 1px solid #999999;
   border-radius: 50%;
 }
 
 .fa-angle-down {
   position: absolute;
-  top: -1px;
-  left: 1px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .slider-form__button {
@@ -258,7 +263,7 @@ p {
   height: 40px;
 }
 
-.fa-angle-right {
+/*.fa-angle-right {
   position: absolute;
   right: 6px;
   top: 4px;
@@ -272,6 +277,19 @@ p {
   top: 20px;
   left: 10px;
   width: 20px;
+}*/
+
+.fa-arrow-right{
+  position: absolute;
+  cursor: pointer;
+  color: #FFF;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .offer {
@@ -382,6 +400,24 @@ p {
   margin-bottom: 15px;
 }
 
+/*@media min-width(320px){
+  .card{
+    display: block;
+  }
+  .card_description{
+    display: block;
+  }
+}
+@media min-width(768px){
+  .card{
+    float: left;
+    width: 50%;
+  }
+  .card_description{
+    float: left;
+    width: 50%;
+  }
+}*/
 .card {
   float: left;
   width: 50%;
@@ -400,7 +436,7 @@ p {
 
 .offer-recent__card-additional_img .additional_img {
   float: left;
-  width: 33%;
+  width: 33.333333%;
 }
 
 .card_description {
@@ -508,6 +544,10 @@ p {
   outline: none;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+.advantage__card-wrapper{
+  margin-bottom: 40px;
 }
 
 .advantage__title {
@@ -783,7 +823,7 @@ p {
 
 .section--padding {
   padding-top: 60px;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
 }
 
 @media (max-width: 992px) {
